@@ -4,15 +4,15 @@ public class GissaTalSpelet {
 
 	public static void main(String[] args) {
 	
-		boolean playing = true;
+		boolean playing = true; // Sant eller falskt i detta samanhanget sant och
 		
 	while(playing) {
 		Scanner input = new Scanner(System.in);
 		Random rand = new Random(); 
 		
-		int randomNumber = rand.nextInt(10);
+		int randomNumber = rand.nextInt(11);
 		
-		System.out.println("Gissa Talet Jag Tänker På!");
+		System.out.println("Gissa Talet Jag Tänker På!"); //Skriver ut det som står inom paraenteserna
 		int gissatNummer = 0;
 		
 		
