@@ -3,10 +3,17 @@ import java.util.*;
 
 public class Hangman {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
+		boolean reset = true;
+		if(reset == false) {
+			  
+		  }
+		while (reset) {
+		
 		HangmanConsoleWindow console = new HangmanConsoleWindow();
 
-		    //Alla variabler
+		    //Alla Typer
 		    String SjälvaOrdet;
 		    char[] Något;
 		    int Längd;
@@ -99,9 +106,18 @@ public class Hangman {
 			  console.println("Grattis! Du gissa hela Ordet: "+ SjälvaOrdet.toUpperCase() + " \nDet tog dig " + times + " Försök!");
 		  }
 
-		   
+		  console.println(" Vill du spela en gång till?");
+		  console.println("1 = Ja");
+		  console.println("2 = Nej");
+		  String in = console.nextString();
+		  if(in.equals("1")) {
+			  reset = true;
+		  }
+		  else {
+			  reset = false;
+		  }
 
 		}
 		
 	}
-
+}
