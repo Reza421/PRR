@@ -106,7 +106,7 @@ public class Hangman {
 			  console.println("Grattis! Du gissa hela Ordet: "+ SjälvaOrdet.toUpperCase() + " \nDet tog dig " + times + " Försök!");
 		  }
 
-		  console.println(" Vill du spela en gång till?");
+		  console.println("Vill du spela en gång till?");
 		  console.println("1 = Ja");
 		  console.println("2 = Nej");
 		  String in = console.nextString();
